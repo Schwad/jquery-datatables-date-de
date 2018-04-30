@@ -2,7 +2,7 @@ module Jquery
   module Datatables
     module Date
       module De
-        VERSION = "0.1.0"
+        VERSION = "1.10.4"
       end
     end
   end
