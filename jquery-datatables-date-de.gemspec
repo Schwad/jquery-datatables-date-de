@@ -7,21 +7,12 @@ Gem::Specification.new do |spec|
   spec.name          = "jquery-datatables-date-de"
   spec.version       = Jquery::Datatables::Date::De::VERSION
   spec.authors       = ["Nick Schwaderer"]
-  spec.email         = ["nick.schwaderer@oceanshq.com"]
+  spec.email         = ["nicholas.schwaderer@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Includes the date-de plugin for jquery-datatables.}
+  spec.description   = %q{This gem allows you to include the German Datesorting plugin needed to sort German formatted dates with datatables.}
+  spec.homepage      = "https://github.com/Schwad/jquery-datatables-date-de"
   spec.license       = "MIT"
-
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
@@ -32,5 +23,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_dependency "railties", ">= 4.2"
 end

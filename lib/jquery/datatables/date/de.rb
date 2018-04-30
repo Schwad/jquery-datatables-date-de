@@ -4,7 +4,8 @@ module Jquery
   module Datatables
     module Date
       module De
-        # Your code goes here...
+        class Engine < ::Rails::Engine
+        end
       end
     end
   end
